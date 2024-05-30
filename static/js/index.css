@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ab7272;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+    box-sizing: inherit;
+    padding-bottom: 5rem; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.5rem;
+}
+
+  footer{
+      position: absolute;
+      align-items: center;
+      padding: 2rem;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+/* styles/profile.css */
+
+.profile-card {
+    margin-top: 20px;
+    width: 400px;
+    height: 550px;
+    flex-shrink: 0;
+    border: 1px solid #ce9595;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(21, 21, 21, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    margin-bottom: 20px;
+  }
+  
+  .image-upload {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  .upload-button {
+    margin-top: 20px;
+    background-color: #acd8f7;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-button:hover {
+    color: #fff;
+    background-color: #45a049;
+  }
+  
+  .profile-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+/* Add your custom styles for the modal and overlay */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .custom-modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-lable-update {
+    margin-top: 10px;
+  }
+
+  .close-btn {
+    cursor: pointer;
+  }
+
+.reg-btn{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+  
+/* login-form */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.paper-form-container {
+  background-color: #b1a1f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.model {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 9999;
+}
+
+.paper1-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+
+.login-form {
+  width: 100%;
+}
+
+
+.submit-button {
+    background-color: #acd8f7;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .download-button {
+    background: none;
+    border: none;
+    color: #65717d; /* Link color */
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+  }
+  .submit-button1 {
+    background-color: #acd8f7;
+    padding: 7px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-button1:hover {
+    color: #fff;
+    background-color: #45a049;
+  }
+
+  .submit-button:hover {
+    color: #fff;
+    background-color: #45a049;
+  }
+.warn-button{
+  background-color: #f5ecc6;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.warn-button:hover {
+  color: #fff;
+  background-color: #fad74d;
+}
+
+.cancel-button {
+    background-color: #f5c9c6;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.cancel-button:hover {
+    color: #fff;
+    background-color: #fa4d4d;
+}
+
+.section-container {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  width: 200px;
+}
+
+.section-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.section p {
+  margin-bottom: 12px;
+}
+
+.modeling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  gap: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 9999;
+}
+
+.pdf-container{
+  margin-right: 300px;
+}
+
+.chart-container{
+  width: 80%;
+  height: 80%;
+}
+
+.rating {
+  background-color: #fff; /* White background */
+  padding: 20px; /* Add some padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px 0; /* Add margin to the top and bottom */
+  min-width: 400px;
+  min-height: 200px;
+  width: auto; /* Adjust width as necessary, could be a fixed value or percentage */
+}
+
+.rating-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  gap: 40px; /* Space between each rating block */
+}
+
+/* Add a visual cue for rating values */
+.rating-value {
+  display: inline-block;
+  background-color: #4CAF50; /* Green background for ratings */
+  color: #fff; /* White text */
+  padding: 3px 6px; /* Padding around the rating value */
+  border-radius: 4px; /* Rounded corners for the rating value */
+  font-weight: bold; /* Make the rating value bold */
+}
+
+
+/* Example CSS styles for button classes */
+.pending-button {
+  background-color: orange;
+  color: white;
+}
+
+.approved-button {
+  background-color: green;
+  color: white;
+}
+
+.returned-button {
+  background-color: blue;
+  color: white;
+}
+
+.revoked-button {
+  background-color: red;
+  color: white;
+}
+
+.rejected-button {
+  background-color: gray;
+  color: white;
+}
+
+.unknown-button {
+  background-color: black;
+  color: white;
+}
